@@ -147,7 +147,7 @@ router.get("/docs",(req,res)=>
 
  
    //res.send({indexes,doc_index:document_index});
-   res.redirect("/pdfindexing");
+   res.send("PDF indexed successfully");
    
 });
 
