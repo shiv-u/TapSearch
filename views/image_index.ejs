@@ -1,0 +1,43 @@
+<% include ../partials/header2.ejs %>
+<div class="container-fluid" style="max-width:450px">
+    <h1></h1>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 m-auto">
+        <h1 class="text-center display-4 my-4">Welcome To TapImage</h1>
+        
+        <form id =  "uploadForm" enctype = "multipart/form-data" action = "/api/index_image" method = "post">
+            <div class="form-group">
+            <input type="file" name="userImage" required />
+            </div>
+            <div class="form-group">
+            <input type="submit" class="btn btn-primary btn-block" value=" Image For Indexing" name="submit">
+            </div>
+        </form>
+           
+        
+        <hr style="height:1px;border:none;color:#333;background-color:#333;">
+        <form id =  "uploadForm" enctype = "multipart/form-data" action = "/api/query_image" method = "post">
+            <div class="form-group">
+            <input type="file" name="userImage" required />
+            </div>
+            <div class="form-group">
+            <input type="submit" class="btn btn-success btn-block" value="Upload image for querying" name="submit">
+            </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</body>
+
+
+<% include ../partials/footer.ejs %>
