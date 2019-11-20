@@ -19,7 +19,8 @@ Maecenas volutpat blandit aliquam etiam erat velit scelerisque. Lectus sit amet 
 <img src="Screenshot (367).png" alt="drawing" width="500" height="300" />
 
 ## Problem 3 - Searching for Images based on their features.
-#### NOTE: Uploading of image will take time and upload only one image at a time.
+#### NOTE: Uploading of image will take time and upload only one image at a time. Extracting the features from mobilenet will also take time, so don't reload when image is uploading.
+
 #### First upload all the images one at a time, I have used "mobilenet" network to extract feature. After uploading enough images then upload the query image.
 ### 1) Click on "TapImage" link on the left corner. Click on "choose file" button to upload a image. Then click on "Image For Indexing" button it will redirect to a page where you have to click on "Index button". Do upload enough images which are similar i.e class of elephants,lions etc.
 ### 2) After uploading enough images then click on "choose file" below the "blue" button then click on "Upload Image for querying". This will load the image and extract its features then it will lead to a page where you will find a button "Search" click on it.
